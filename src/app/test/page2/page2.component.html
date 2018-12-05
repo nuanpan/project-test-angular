@@ -1,0 +1,51 @@
+<div>
+    <header>
+        <h1>Example Application</h1>
+    </header>
+    <div style="height: 10px"></div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 ml-auto col-xl-9 mr-20">
+                    <!-- Nav tabs -->
+                    <div class="card">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ngb-tabset [justify]="'center'" class="text-center">
+                                    <ngb-tab>
+                                        <ng-template ngbTabTitle>
+                                            <i class="now-ui-icons objects_umbrella-13"></i> Fetch Internal
+                                        </ng-template>
+                                        <ng-template ngbTabContent>
+                                            <p style="margin-left: 30px;text-align: left;">
+                                                X: {{x}}
+                                                <br> Y: {{y}}
+                                                <br> AnotherX : {{anotherX}}
+                                                <br>
+                                            </p>
+                                        </ng-template>
+                                    </ngb-tab>
+                                    <ngb-tab>
+                                        <ng-template ngbTabTitle>
+                                            <i class="now-ui-icons shopping_cart-simple"></i> Fetch API
+                                        </ng-template>
+                                        <ng-template ngbTabContent>
+                                            <p style="margin-left: 30px;text-align: left;">
+                                                Url: {{url}}
+                                                <br>X: {{apiResult.x}}
+                                                <br> Y: {{apiResult.y}}
+                                                <br> AnotherX : {{apiResult.anotherX}}
+                                                <br>
+
+                                            </p>
+                                        </ng-template>
+                                    </ngb-tab>
+                                </ngb-tabset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
